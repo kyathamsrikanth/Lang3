@@ -1,0 +1,24 @@
+{
+    "root": "/home/jovyan/Lang3",
+    "git": {
+        "remote": "https://github.com/kyathamsrikanth/Lang3.git",
+        "commit": "540c0bd504065fcc7e86edcea5d4c2fd9d26efea"
+    },
+    "email": "kyatham.srikanth.min15@itbhu.ac.in",
+    "startedAt": "2019-06-19T05:54:29.907958",
+    "host": "jupyter-kyathamsrikanth",
+    "username": "jovyan",
+    "os": "Linux-4.14.119+-x86_64-with-debian-buster-sid",
+    "python": "3.7.3",
+    "gpu": "Tesla K80",
+    "gpu_count": 1,
+    "cpu_count": 2,
+    "program": "imdb-lstm.py",
+    "cuda": "10.1.168",
+    "args": [],
+    "state": "finished",
+    "heartbeatAt": "2019-06-19T06:04:32.204903",
+    "jobType": null,
+    "mode": "run",
+    "exitcode": 0
+}

@@ -14,14 +14,13 @@ import argparse
 
 parser = argparse.ArgumentParser()
 parser.add_argument("text", type=str)
-parser.add_argument("batch_size",typr=int)
 
 args = parser.parse_args()
 
 run = wandb.init()
 config = run.config
 config.hidden_nodes = 128
-config.batch_size = aegs.batch_size
+config.batch_size = 256
 config.file = args.text
 config.maxlen = 200
 config.step = 3

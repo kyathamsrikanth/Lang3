@@ -1,0 +1,71 @@
+{
+    "graph": {
+        "_type": "graph",
+        "format": "keras",
+        "nodes": [
+            {
+                "name": "embedding_1_input",
+                "id": "embedding_1_input",
+                "class_name": "InputLayer",
+                "output_shape": [
+                    null,
+                    300
+                ],
+                "num_parameters": 0
+            },
+            {
+                "name": "embedding_1",
+                "id": "embedding_1",
+                "class_name": "Embedding",
+                "output_shape": [
+                    null,
+                    300,
+                    50
+                ],
+                "num_parameters": 50000
+            },
+            {
+                "name": "bidirectional_1",
+                "id": "bidirectional_1",
+                "class_name": "Bidirectional",
+                "output_shape": [
+                    null,
+                    200
+                ],
+                "num_parameters": 121600
+            },
+            {
+                "name": "dense_1",
+                "id": "dense_1",
+                "class_name": "Dense",
+                "output_shape": [
+                    null,
+                    1
+                ],
+                "num_parameters": 201
+            }
+        ],
+        "edges": [
+            [
+                "embedding_1_input",
+                "embedding_1"
+            ],
+            [
+                "embedding_1",
+                "bidirectional_1"
+            ],
+            [
+                "bidirectional_1",
+                "dense_1"
+            ]
+        ]
+    },
+    "val_acc": 0.88152,
+    "_runtime": 1112.912837266922,
+    "acc": 0.90176,
+    "_timestamp": 1560927580.4779074,
+    "val_loss": 0.28680524817466735,
+    "_step": 9,
+    "epoch": 9,
+    "loss": 0.24532930240631104
+}
